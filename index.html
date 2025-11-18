@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LoboTrailAST</title>
+  <style>
+    body { margin: 0; font-family: Arial, sans-serif; background: #111; color: #fff; }
+    header { padding: 20px; text-align: center; border-bottom: 1px solid #333; }
+    nav a { margin: 0 15px; color: #ccc; text-decoration: none; font-weight: bold; }
+    nav a:hover { color: #fff; }
+    section { padding: 60px 20px; max-width: 1000px; margin: auto; }
+    h1, h2 { text-align: center; }
+    .gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 15px; }
+    .gallery img { width: 100%; border-radius: 8px; }
+    .video-list iframe { width: 100%; height: 250px; margin-bottom: 20px; border-radius: 8px; }
+    footer { text-align: center; padding: 20px; color: #777; border-top: 1px solid #333; }
+    .logo { width: 150px; margin: 10px auto; display: block; }
+  </style>
+</head>
+<body>
+
+<header>
+  <img id="logo" class="logo" src="" alt="Logo LoboTrailAST" />
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#rutas">Rutas</a>
+    <a href="#galeria">Galería</a>
+    <a href="#desayunos">Desayunos</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+</header>
+
+<section id="inicio">
+  <h1>Bienvenido a LoboTrailAST</h1>
+  <p style="text-align:center; max-width:700px; margin:auto; color:#ccc;">Aventura, rutas moteras por Asturias, desayunos en moto y vídeos semanales. Todo sobre mi BMW F800GS y mis salidas por la tierrina.</p>
+</section>
+
+<section id="rutas">
+  <h2>Rutas</h2>
+  <p style="text-align:center; color:#ccc;">Aquí podrás añadir enlaces a Wikiloc o mapas de tus rutas.</p>
+  <ul style="max-width:600px; margin:auto;">
+    <li><a href="#" style="color:#9cf;">Ruta ejemplo 1 - Wikiloc</a></li>
+    <li><a href="#" style="color:#9cf;">Ruta ejemplo 2 - Wikiloc</a></li>
+  </ul>
+</section>
+
+<section id="galeria">
+  <h2>Galería</h2>
+  <div class="gallery">
+    <img src="" alt="Foto 1" />
+    <img src="" alt="Foto 2" />
+    <img src="" alt="Foto 3" />
+  </div>
+</section>
+
+<section id="desayunos">
+  <h2>Desayunos en moto</h2>
+  <p style="text-align:center; color:#ccc;">Sitios donde paro a desayunar, recomendaciones y fotos.</p>
+</section>
+
+<section id="videos">
+  <h2>Vídeos YouTube</h2>
+  <div class="video-list">
+    <iframe src="" allowfullscreen></iframe>
+    <iframe src="" allowfullscreen></iframe>
+  </div>
+</section>
+
+<section id="contacto">
+  <h2>Contacto & Redes</h2>
+  <p style="text-align:center; color:#ccc;">Sígueme y disfruta de las rutas:</p>
+  <p style="text-align:center;">
+    Instagram: <a href="#" style="color:#9cf;">@LoboTrailAST</a><br>
+    YouTube: <a href="#" style="color:#9cf;">Canal</a>
+  </p>
+</section>
+
+<footer>
+  © 2025 LoboTrailAST - Página creada para rutas moteras
+</footer>
+
+<script>
+  document.getElementById('logo').src = localStorage.getItem('lobotrailast_logo') || "";
+</script>
+
+</body>
+</html>
